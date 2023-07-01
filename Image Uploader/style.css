@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+.appBody{
+    border: 2px dotted #d1d6d6;
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon{
+    color: aquamarine;
+    font-size: 100px;
+}

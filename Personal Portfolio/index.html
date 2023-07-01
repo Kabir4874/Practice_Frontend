@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script defer src="java.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/63239a6255.js"crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.png" class="logo" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>
+            Hi, I'm <span>Kevin</span> Jen <br />
+            From Australia
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------About-------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla
+              nibh, tincidunt sit amet sapien quis, elementum molestie tellus.
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Mauris eleifend magna id ante
+              convallis mattis. Quisque in sem tristique, dictum sapien et,
+              accumsan libero.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skill')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-content active-tab" id="skill">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS App
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />UI/UX Design Training at ET
+                  Institute
+                </li>
+                <li><span>2019 - 2021</span><br />Team Lead at StarApp LLC.</li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                  Digital Ltd.
+                </li>
+                <li>
+                  <span>2016 - 2017</span><br />Internship at ekart eCommerce.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>2016</span><br />UI/UX Design Training at ET Institute
+                </li>
+                <li><span>2016</span><br />MBA from MIT Bangalore</li>
+                <li><span>2014</span><br />BBA form ISM Bangalore</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Services-------------------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+              tincidunt sit amet sapien quis.</p>
+              <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+              tincidunt sit amet sapien quis.</p>
+              <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh,
+              tincidunt sit amet sapien quis.</p>
+              <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------Portfolio------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/work-1.png" alt="">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>The app connects you yo the talented people around the world.
+                Download it from play store.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-2.png" alt="">
+             <div class="layer">
+              <h3>Music App</h3>
+              <p>The app connects you yo the talented people around the world.
+                Download it from play store.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/work-3.png" alt="">
+             <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>The app connects you yo the talented people around the world.
+                Download it from play store.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -----------------Contact----------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class='bx bx-paper-plane' ></i> contact@example.com</p>
+            <p><i class='bx bxs-phone' ></i> +1 5551265412</p>
+            <div class="social-icons">
+              <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+              <a href="#"><i class='bx bxl-twitter' ></i></a>
+              <a href="#"><i class='bx bxl-instagram' ></i></a>
+              <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="img/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright Kevin | Made By Kabir Ahmed</p>
+      </div>
+    </div>
+
+
+  </body>
+</html>

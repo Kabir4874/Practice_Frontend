@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --orange-color: #f15b43;
+  --green-color: #65c9bb;
+  --white-color: #fff;
+  --black-color: #000;
+  --title-color: #263b5c;
+  --p-text-color: #777777;
+}
+/* =======================================
+Reusable Code
+======================================= */
+.btn {
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  outline: 1px solid var(--white-color);
+  background: transparent;
+}
+.btn3 {
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  outline: 2px solid var(--orange-color);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.btn3:hover {
+  background: transparent;
+  color: var(--orange-color);
+}
+.btn2 {
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: transparent;
+  color: var(--orange-color);
+  outline: none;
+  border: 2px solid var(--orange-color);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: 500;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.btn2 span {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: var(--orange-color);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn2:hover span {
+  width: 100%;
+}
+.btn2:hover {
+  color: var(--white-color);
+}
+
+.section {
+  padding: 40px 13%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 140px;
+  align-items: center;
+}
+/* =======================================
+Header Section Start
+======================================= */
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(img/h1_hero1.jpg.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 6%;
+  position: fixed;
+  z-index: 1000;
+}
+#navlist {
+  display: flex;
+  gap: 40px;
+}
+#navlist li {
+  position: relative;
+  padding: 10px 0;
+}
+
+#navlist li a {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 18px;
+  transition: 0.4s;
+}
+#navlist li a:hover {
+  color: var(--green-color);
+}
+#navlist li ul {
+  position: absolute;
+  width: 140px;
+  padding: 10px 20px;
+  left: -20px;
+  background: var(--white-color);
+  top: 40px;
+  border-radius: 5px;
+  display: none;
+  transition: 0.5s;
+}
+.point {
+  cursor: pointer;
+}
+#navlist li:hover .dropdown {
+  display: block;
+  animation: slidedown 0.5s ease;
+}
+@keyframes slidedown {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#navlist li ul li a {
+  color: var(--title-color);
+}
+.number a {
+  font-size: 20px;
+  color: var(--white-color);
+}
+.number a:nth-child(2) {
+  border-bottom: 1px dashed var(--white-color);
+  margin-right: 40px;
+}
+.number button i {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.header-text {
+  padding: 15% 13%;
+}
+.header-text h1 {
+  font-size: 3.5vw;
+  width: 40%;
+  color: var(--white-color);
+  line-height: 70px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.header-text p {
+  font-size: 20px;
+  width: 30%;
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+.ht-btn {
+  background: var(--green-color);
+}
+#navbar {
+  top: 0;
+  transition: 0.5s;
+}
+/* =======================================
+Upcoming Program Section Start
+======================================= */
+.seciton-up {
+  background-color: #fcf2eb;
+}
+.up-img img {
+  width: 100%;
+}
+.span {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--green-color);
+  margin-bottom: 10px;
+}
+.up-text h2 {
+  font-size: 3vw;
+  font-weight: 400;
+  width: 80%;
+  line-height: 60px;
+  margin-bottom: 30px;
+  color: var(--title-color);
+}
+.up-text p {
+  font-size: 18px;
+  width: 80%;
+  color: var(--p-text-color);
+  margin-bottom: 30px;
+}
+.up-btn1 {
+  margin-right: 20px;
+}
+/* =======================================
+About Section Start
+======================================= */
+.section-about {
+  padding: 120px 13%;
+}
+.about-container {
+  gap: 40px;
+}
+/* =======================================
+Service Section Start
+======================================= */
+.service-section {
+  padding: 40px 0;
+  width: 100%;
+}
+.service-container {
+  gap: 30px;
+}
+.service-col {
+  background-color: #f4f2f1;
+}
+.service-col img {
+  width: 100%;
+}
+.service-col-text {
+  padding: 20px 30px;
+}
+.service-col-text a {
+  display: inline-block;
+  font-size: 26px;
+  color: #1e2f4a;
+  font-weight: 600;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.service-col-text a:hover {
+  color: var(--orange-color);
+}
+.service-col-text p {
+  font-size: 18px;
+  color: var(--p-text-color);
+  margin-bottom: 30px;
+}
+.service-col-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.sub-col span {
+  color: var(--green-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub-col p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0;
+}
+.s-btn {
+  padding: 15px 60px;
+}
+
+/* =======================================
+Helping Today Section Start
+======================================= */
+.ht-container {
+  padding: 30px 0;
+}
+/* =======================================
+Call To Action Section Start
+======================================= */
+.cta {
+  background: url(img/section-bg1.jpg.webp);
+  background-position: center;
+  background-size: cover;
+  padding: 120px 13%;
+  background-attachment: fixed;
+}
+.cta-col {
+  text-align: center;
+}
+.cta-col a {
+  display: block;
+  font-size: 30px;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.cta-title {
+  text-align: center;
+  margin-bottom: 80px;
+  color: var(--white-color);
+}
+.cta-title span {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.cta-title h2 {
+  font-size: 55px;
+  font-weight: 400;
+}
+.cta-col p {
+  font-size: 18px;
+  color: var(--white-color);
+}
+/* =======================================
+Slider Section Start
+======================================= */
+.slider-section{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.slider-title{
+    flex-basis: 100%;
+}
+.slider-title h2{
+    width: 100%;
+}
+.slider-title a{
+    font-size: 20px;
+    padding: 15px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+.slider-container{
+    display: flex;
+    overflow: hidden;
+    gap: 60px;
+}
+.slider-col{
+    background-color: #f4f2f1;
+}
+.slider-col-text{
+    padding: 40px 30px;
+}
+.big-text{
+    display: inline-block;
+    font-size: 30px;
+    color: var(--title-color);
+    margin-bottom: 20px;
+}
+.slider-col-text p{
+    font-size: 18px;
+    color: var(--p-text-color);
+    margin-bottom: 20px;
+}
+.read{
+    font-size: 20px;
+    color: var(--orange-color);
+    text-decoration: underline;
+}

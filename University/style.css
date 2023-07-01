@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chivo", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main: #00b78a;
+  --white: #fff;
+  --text-head: #32404d;
+  --text-p: #777777;
+}
+/* !Reusable Code  */
+.btn {
+  font-weight: 500;
+  border-bottom: 2px solid var(--main);
+  padding-bottom: 0.5rem;
+  color: var(--main);
+  transition: 0.3s linear;
+}
+.btn:hover {
+  letter-spacing: 0.1rem;
+}
+
+.container {
+  padding: 5rem 13%;
+}
+.h2-text{
+    color: var(--text-head);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.p-text{
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: var(--text-p);
+}
+/* !Count Down  */
+
+.count-down {
+  display: flex;
+  padding: 0 13%;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  background-color: #32404d;
+  color: var(--white);
+}
+.count-down_text {
+  display: flex;
+  align-items: center;
+}
+.count-down_text span {
+  color: var(--main);
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-right: 0.8rem;
+}
+.count-down_text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.time {
+  text-align: center;
+}
+.time p {
+  font-weight: 400;
+  color: #a4afbd;
+  font-size: 0.9rem;
+}
+.timer {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.day {
+  color: var(--main);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.btn-c {
+  font-weight: 500;
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 0.5rem;
+  color: var(--white);
+  transition: 0.3s linear;
+}
+.btn-c:hover {
+  letter-spacing: 0.1rem;
+}
+
+/* !Navbar Start  */
+
+nav {
+  padding: 1rem 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+nav ul img{
+    cursor: pointer;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  font-size: 1.1rem;
+  color: var(--text-head);
+  transition: .4s linear;
+}
+nav ul li a:hover{
+    color: var(--main);
+}
+
+nav ul li ul {
+  position: absolute;
+  display: inline-block;
+  left: -15px;
+  top: 3.2rem;
+  width: 150px;
+  background-color: var(--white);
+  padding: 1rem 0;
+  transform: translateY(1rem);
+  opacity: 0;
+  transition: .4s linear;
+}
+nav ul li ul li {
+  padding: 0.5rem 1rem;
+}
+nav ul li:hover .dmenu{
+    opacity: 1;
+    transform: translateY(0);
+}
+.contact{
+    display: flex;
+    align-items: center;
+}
+.num p{
+    font-weight: 500;
+    padding-right: 1rem;
+    border-right: 2px solid var(--text-p);
+}
+.num p span{
+    color: var(--main);
+}
+.icons{
+    padding-left: 1rem;
+}
+.icons i{
+    font-size: 1.8rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: .4s linear;
+}
+.icons i:hover{
+    transform: rotateY(180deg);
+}
+.icons i:nth-child(1){
+    color: #3b5998;
+}
+.icons i:nth-child(2){
+    color: #3b5998;
+}
+.icons i:nth-child(3){
+    color: #1da1f2;
+}
+.icons i:nth-child(4){
+    color: #ff0000;
+}
+.icons i:nth-child(5){
+    color: #34a853;
+}
+
+
+/* !Header Start  */
+
+header{
+    width: 100%;
+    height: 85vh;
+    padding: 0 13%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(rgba(0,0,0,.3)100%, rgba(0,0,0,.3)100%), url(img/h1_hero1.jpg.webp);
+    background-position: center;
+    background-size: cover;
+}
+header span{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+header h1{
+    font-weight: 900;
+    font-size: 4rem;
+    width: 60%;
+    color: var(--white);
+}
+header p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    width: 50%;
+}
+header a{
+    padding: 1.2rem 2rem;
+    background-color: var(--main);
+    font-size: 1.2rem;
+    color: var(--white);
+    transition: .5s linear;
+}
+header a:hover{
+    background-color: transparent;
+    outline: 1px solid var(--white);
+}
+
+/* !About Start  */
+
+.about{
+    background-color: #fcf2eb;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-img{
+    flex: 1;
+}
+.about-text{
+    flex: 1;
+}
+.about-text h2{
+    color: var(--text-head);
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+    font-weight: 800;
+}
+.about-text p{
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+    color: var(--text-p);
+}
+
+/* !PROGRAMS WE OFFER Section Start  */
+
+.title{
+    text-align: center;
+}
+.pwo-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.box{
+    flex: 1;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 1rem;
+    overflow: hidden;
+    transition: .4s;
+}
+.box img{
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: .6s;
+}
+.box-title{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-head);
+    margin-bottom: 1rem;
+}
+.box p{
+    color: var(--text-p);
+    margin-bottom: 1rem;
+    width: 90%;
+}
+.btn{
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.box:hover img{
+  transform: scale(1.1);
+}
+.box:hover{
+  border-color: var(--main);
+}
+.box a{
+  transition: .4s;
+}
+.box:hover a{
+  color: var(--main);
+}
